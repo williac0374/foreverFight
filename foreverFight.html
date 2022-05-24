@@ -1,0 +1,869 @@
+<!DOCTYPE html><meta name='apple-mobile-web-app-capable' content='yes' /><meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width, height=device-height' /><meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' /><body><script>var level =[
+ 
+ //window.onload = function () { window.focus(); }
+
+ //window.onclick = function () { window.focus(); }
+
+
+ [1,0,0,0,0,0,0,0,0,0,3,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+  [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+  ];
+var win=false;
+var levelShake=false;
+var levelOffX=0;
+var levelOffXPrev=0;
+var alienDropRate=5000; //milliseconds between drops
+var alienNumber=5;
+var trapped=false;
+// Create the front canvas
+var canvas = document.createElement("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width = 640;
+canvas.height = 480;
+canvas.style.position = 'absolute';
+//canvas.style.zIndex = "-10";
+canvas.style.left = '0%';
+canvas.style.top = '0%';
+canvas.style.backgroundImage = "url('images/moonFront.png')";
+canvas.style.backgroundPosition = "0px 0px";
+document.body.style.background = "black";
+document.body.appendChild(canvas);
+
+// Create the mid canvas
+var canvas2 = document.createElement("canvas");
+var ctx2 = canvas.getContext("2d");
+canvas2.width = 640;
+canvas2.height = 480;
+canvas2.style.position = 'absolute';
+canvas2.style.zIndex = "-10";
+canvas2.style.left = '0%';
+canvas2.style.top = '0%';
+canvas2.style.backgroundImage = "url('images/moonMid.png')";
+canvas2.style.backgroundPosition = "0px 0px";
+document.body.appendChild(canvas2);
+
+
+
+//hides cursor
+document.body.style.cursor = 'none';
+
+
+// Hero images
+var heroIdleReady = false;
+var heroIdleImage = new Image();
+heroIdleImage.onload = function () {
+	heroIdleReady = true;
+};
+heroIdleImage.src = "images/roboR.png";
+var heroLeftReady = false;
+var heroLeftImage = new Image();
+heroLeftImage.onload = function () {
+	heroLeftReady = true;
+};
+heroLeftImage.src = "images/roboL.png";
+
+
+
+// ship image
+var shipReady = false;
+var shipImage = new Image();
+shipImage.onload = function () {
+	shipReady = true;
+};
+shipImage.src = "images/ship.png";
+
+// sight image
+var sightReady = false;
+var sightImage = new Image();
+sightImage.onload = function () {
+	sightReady = true;
+};
+sightImage.src = "images/sight.png";
+
+
+
+// Monster image
+var monsterReady = false;
+var monsterImage = new Image();
+monsterImage.onload = function () {
+	monsterReady = true;
+};
+monsterImage.src = "images/AlienRight.png";
+
+var monsterLReady = false;
+var monsterLImage = new Image();
+monsterLImage.onload = function () {
+	monsterLReady = true;
+};
+monsterLImage.src = "images/AlienLeft.png";
+
+var AlienLeftJumpReady = false;
+var AlienLeftJumpImage = new Image();
+AlienLeftJumpImage.onload = function () {
+	AlienLeftJumpReady = true;
+};
+AlienLeftJumpImage.src = "images/AlienLeftJump.png";
+
+var AlienRightJumpReady = false;
+var AlienRightJumpImage = new Image();
+AlienRightJumpImage.onload = function () {
+	AlienRightJumpReady = true;
+};
+AlienRightJumpImage.src = "images/AlienRightJump.png";
+
+var AlienFloatLeftReady = false;
+var AlienFloatLeftImage = new Image();
+AlienFloatLeftImage.onload = function () {
+	AlienFloatLeftReady = true;
+};
+AlienFloatLeftImage.src = "images/AlienFloatLeft.png";
+
+var AlienFloatRightReady = false;
+var AlienFloatRightImage = new Image();
+AlienFloatRightImage.onload = function () {
+	AlienFloatRightReady = true;
+};
+AlienFloatRightImage.src = "images/AlienFloatRight.png";
+
+var IceBlockReady = false;
+var IceBlockImage = new Image();
+IceBlockImage.onload = function () {
+	IceBlockReady = true;
+};
+IceBlockImage.src = "images/IceBlock.png";
+
+var fxReady = false;
+var fxImage = new Image();
+fxImage.onload = function () {
+	fxReady = true;
+};
+fxImage.src = "images/fx.png";
+
+// Game objects
+var hero = {
+    health:100 ,
+	speed: 200 , // movement in pixels per second
+  	mass: 256,	// how much gravity affects the hero
+  	x: 0,
+    y: 0,
+  	frame: 0,
+  	xprev: 0,
+  	yprev: 0,
+  	jump: false,
+  	ups: 0,
+  	falling:false,
+  	wide: 32,
+  	tall: 32,
+    left: false,
+  	state: 1,
+  	cage: 50, //This is what percentage(taken right out of the middle) of the canvas the hero moves before level scrolling happens
+};
+
+
+var ship = {
+	speed: 256 , 
+  	x: -500,	
+  	y: 0,
+    startX: 0,
+  	startY: 0,
+  	fired: false,
+  	dx: -256,
+  	hp: 100,
+}
+
+var monster = function(x,y,startX,startY,dx,mass,wide,tall,speed,fall,state,id){
+	this.x = x;
+  	this.y = y;
+  	this.startX = startX;
+  	this.startY = startY;
+  	this.dx = dx;
+  	this.mass = mass;
+  	this.wide = wide;
+  	this.tall = tall;
+  	this.speed = speed;
+  	this.mean = speed;
+  	this.fall = fall;
+    this.left = false;
+  	this.hop = false;
+  	this.state = state;
+  	this.id = id;
+};
+nmes=[];
+for (var i = 0; i < alienNumber; i++) {
+  t = new monster();
+  t.x = -100;
+  t.y = 32;
+  t.xprev = -100;
+  t.yprev = 32;
+  t.startX = -100;
+  t.startY = 32;
+  t.dx = 0;
+  t.mass = 128;
+  t.wide = 28;
+  t.tall = 32;
+  t.speed = 64;
+  t.mean = Math.floor(Math.random() * 10)+1;
+  t.fall=true;
+  t.state=1;
+  t.left=false;
+  t.id = i;
+  nmes.push(t);
+}
+
+alienNumber=0;
+var monstersCaught = 0;
+
+var shot = function(x, y, tx, ty, dx, dy, speed) {
+  this.x = x;
+  this.y = y;
+  this.tx = tx;
+  this.ty = ty;
+  this.dx = dx;
+  this.dy = dy;
+  this.speed = speed;
+
+};
+var box = function(x,y,id,breakable,hp,show,type){
+  this.x = x;
+  this.y = y;
+  this.startX = x;
+  this.startY = y;
+  this.id = id;
+  this.breakable = breakable;
+  this.hp = hp;
+  this.show = show;
+  this.type = type;
+}
+boxes=[];
+function loadLevel(lvl){
+  for (var i = 0; i < lvl[0].length; i++) {
+    for (var ii = 0; ii < lvl.length; ii++) {
+      if(lvl[ii][i]==1){
+        t = new box();
+        t.x = i * 32;
+        t.y = ii * 32;
+        t.startX = i * 32;
+        t.startY = ii * 32;
+        t.id = lvl[ii][i];
+        t.breakable =false;
+        t.show = false;
+        boxes.push(t);
+      }
+      if(lvl[ii][i]==3){ // player
+        hero.x = i * 32;
+        hero.y = ii * 32;
+      }
+       if(lvl[ii][i]==7){ //ship
+        ship.x = i * 32;
+        ship.y = ii * 32;
+        ship.startX = i * 32;
+        ship.startY = ii * 32;
+      }
+      if(lvl[ii][i]==9){ //alien
+        nmes[0].x = i * 32;
+        nmes[0].y = ii * 32;
+        nmes[0].startX = i * 32;
+        nmes[0].startY = ii * 32;
+       }
+    }
+  }
+}
+loadLevel(level);
+shots = [];
+var shotNum = 0; //current shot to be fired next
+var clip = 30; // maximum shots
+for (var i = 0; i < clip; i++) {
+  t = new shot();
+  t.type = 1;
+  t.x = -10000;
+  t.y = -100;
+  t.startx = -100;
+  t.starty = -100;
+  t.tx = 0;
+  t.ty = 0;
+  t.dx = 0;
+  t.dy = 0;
+  t.speed = 400;
+  t.range = 200;
+  shots.push(t);
+}
+
+
+// Handle keyboard controls
+var keysDown = {};
+
+addEventListener("keydown", function (e) {
+	keysDown[e.keyCode] = true;
+  // this is for finding keycodes
+  //alert(e.keyCode);
+}, false);
+
+addEventListener("keyup", function (e) {
+	delete keysDown[e.keyCode];
+}, false);
+
+var targetX = 0;
+var targetY = 0;
+
+function allShoot(shooter,type,tarX,tarY,range){
+  shots[shotNum].range=range;
+  shots[shotNum].type=type;
+  if(type==1 || type==2){
+    shots[shotNum].x = shooter.x+16;
+    shots[shotNum].y = shooter.y+16;
+    shots[shotNum].startx = shooter.x+16;
+    shots[shotNum].starty = shooter.y+16;
+  }
+  if(type==9){
+    shots[shotNum].x = shooter.x+48;
+    shots[shotNum].y = shooter.y+16;
+    shots[shotNum].startx = shooter.x+48;
+    shots[shotNum].starty = shooter.y+16;  
+  }
+  dir = point_direction(shots[shotNum].x,shots[shotNum].y,tarX,tarY);
+  shots[shotNum].dx = lengthdir_x(1, dir);
+  shots[shotNum].dy = lengthdir_y(1, dir);
+  shotNum += 1;
+  if (shotNum==clip){ shotNum=0  }
+}
+
+
+// disables save as right click
+window.addEventListener('contextmenu', (event) => {
+  event.preventDefault()
+})
+
+// When the mouse moves, update the targetX and targetY
+addEventListener("mousemove", (mouseEvent) => {
+	targetX = mouseEvent.offsetX;
+	targetY = mouseEvent.offsetY;
+    if(targetX<hero.x){hero.left=true}else{hero.left=false}
+});
+// When the mouse moves, update the targetX and targetY
+addEventListener("mousedown", (mouseEvent) => {
+  event.preventDefault();
+   window.focus();
+ if(event.button==0 ){allShoot(hero,1,targetX,targetY,120)} // ice
+ if(event.button==2 ){allShoot(hero,2,targetX,targetY,120)} // anti gravity
+	
+});
+function gravity(input,speed){
+  return input+speed;
+}
+
+function inside(input,low,high){
+  if(input>=low && input<=high){return true;}
+}
+
+function levelCollision(objX,objY,w,t){
+    var xhit=false;
+    var yhit=false;
+  
+    //checks all level objects
+      for (var i = 0; i < boxes.length; i++) {
+		xhit=false;yhit=false;		
+		if(boxes[i].id>0){
+          if(objX+w>=boxes[i].x && objX<=boxes[i].x+w){ // checks if object is in the same "X space"
+              if(objY+t>=boxes[i].y && objY<=boxes[i].y+t){ // checks if object is in the same "Y space"
+			  	
+                return true;
+              }           
+          }
+		}
+    }
+}
+
+//nme ai
+function heroHunt(nme){
+  if(nme.x>hero.x){
+    nme.dx=-1;
+    nme.left=true;
+    
+  }else{
+    nme.dx=1;
+    nme.left=false;
+  }
+}
+
+
+//ship ai
+function shipAi(modifier){
+  if(ship.startX<32){ship.dx=256}
+  if(ship.startX>(level[0].length*32)-4000){ship.dx=-256}
+  
+  ship.startX += ship.dx * modifier; 
+  
+
+}
+
+//shakeIT
+function shakeIt(size){
+  shakeX=Math.random()*size;
+  shakeX=Math.random()*size;
+  temp[0]=shakeX;
+  temp[1]=shakeY;
+  return temp;
+}
+//ship alien drop
+function drop(){
+  baydoor=false;
+  for (var i = 0; i < nmes.length; i++) { // runs thru all the nmes[] 
+    if (nmes[i].x<0 && baydoor==false){ // checks to see if nmes[i] is "in play"
+      nmes[i].x = ship.startX+32;
+      nmes[i].y = ship.startY+32;
+      nmes[i].startX = ship.startX+32;
+      nmes[i].startY = ship.startY+32;
+      nmes[i].dx = 0;
+      nmes[i].mass = 128;
+     
+      
+      baydoor=true;
+    }
+  }
+  setTimeout(drop, 2000); 
+  //alert("bombs away");
+}
+//gets the alien dropping started!
+setTimeout(drop, 100);
+function ease(input,target,percentage){
+  if(input<target){input+=(target-input)*percentage}
+  if(input>target){input-=(input-target)*percentage}
+  return input;
+}
+// trig functions:
+function lengthdir_x(_length, _direction) { return _length * Math.cos(_direction * Math.PI / -180); }
+function lengthdir_y(_length, _direction) { return _length * Math.sin(_direction * Math.PI / -180); }
+function point_distance(_x1, _y1, _x2, _y2) { return Math.sqrt(Math.pow(( _x1 - _x2), 2) + Math.pow((_y1 - _y2), 2)); }
+function point_direction(_x1, _y1, _x2, _y2) { return Math.atan2(_y2 - _y1, _x2 - _x1) * (-180 / Math.PI); }
+
+
+/*! FPSMeter 0.3.1 - 9th May 2013 | https://github.com/Darsain/fpsmeter 
+(function(m,j){function s(a,e){for(var g in e)try{a.style[g]=e[g]}catch(j){}return a}function H(a){return null==a?String(a):"object"===typeof a||"function"===typeof a?Object.prototype.toString.call(a).match(/\s([a-z]+)/i)[1].toLowerCase()||"object":typeof a}function R(a,e){if("array"!==H(e))return-1;if(e.indexOf)return e.indexOf(a);for(var g=0,j=e.length;g<j;g++)if(e[g]===a)return g;return-1}function I(){var a=arguments,e;for(e in a[1])if(a[1].hasOwnProperty(e))switch(H(a[1][e])){case "object":a[0][e]=
+I({},a[0][e],a[1][e]);break;case "array":a[0][e]=a[1][e].slice(0);break;default:a[0][e]=a[1][e]}return 2<a.length?I.apply(null,[a[0]].concat(Array.prototype.slice.call(a,2))):a[0]}function N(a){a=Math.round(255*a).toString(16);return 1===a.length?"0"+a:a}function S(a,e,g,j){if(a.addEventListener)a[j?"removeEventListener":"addEventListener"](e,g,!1);else if(a.attachEvent)a[j?"detachEvent":"attachEvent"]("on"+e,g)}function D(a,e){function g(a,b,d,c){return y[0|a][Math.round(Math.min((b-d)/(c-d)*J,J))]}
+function r(){f.legend.fps!==q&&(f.legend.fps=q,f.legend[T]=q?"FPS":"ms");K=q?b.fps:b.duration;f.count[T]=999<K?"999+":K.toFixed(99<K?0:d.decimals)}function m(){z=A();L<z-d.threshold&&(b.fps-=b.fps/Math.max(1,60*d.smoothing/d.interval),b.duration=1E3/b.fps);for(c=d.history;c--;)E[c]=0===c?b.fps:E[c-1],F[c]=0===c?b.duration:F[c-1];r();if(d.heat){if(w.length)for(c=w.length;c--;)w[c].el.style[h[w[c].name].heatOn]=q?g(h[w[c].name].heatmap,b.fps,0,d.maxFps):g(h[w[c].name].heatmap,b.duration,d.threshold,
+0);if(f.graph&&h.column.heatOn)for(c=u.length;c--;)u[c].style[h.column.heatOn]=q?g(h.column.heatmap,E[c],0,d.maxFps):g(h.column.heatmap,F[c],d.threshold,0)}if(f.graph)for(p=0;p<d.history;p++)u[p].style.height=(q?E[p]?Math.round(O/d.maxFps*Math.min(E[p],d.maxFps)):0:F[p]?Math.round(O/d.threshold*Math.min(F[p],d.threshold)):0)+"px"}function k(){20>d.interval?(x=M(k),m()):(x=setTimeout(k,d.interval),P=M(m))}function G(a){a=a||window.event;a.preventDefault?(a.preventDefault(),a.stopPropagation()):(a.returnValue=
+!1,a.cancelBubble=!0);b.toggle()}function U(){d.toggleOn&&S(f.container,d.toggleOn,G,1);a.removeChild(f.container)}function V(){f.container&&U();h=D.theme[d.theme];y=h.compiledHeatmaps||[];if(!y.length&&h.heatmaps.length){for(p=0;p<h.heatmaps.length;p++){y[p]=[];for(c=0;c<=J;c++){var b=y[p],e=c,g;g=0.33/J*c;var j=h.heatmaps[p].saturation,m=h.heatmaps[p].lightness,n=void 0,k=void 0,l=void 0,t=l=void 0,v=n=k=void 0,v=void 0,l=0.5>=m?m*(1+j):m+j-m*j;0===l?g="#000":(t=2*m-l,k=(l-t)/l,g*=6,n=Math.floor(g),
+v=g-n,v*=l*k,0===n||6===n?(n=l,k=t+v,l=t):1===n?(n=l-v,k=l,l=t):2===n?(n=t,k=l,l=t+v):3===n?(n=t,k=l-v):4===n?(n=t+v,k=t):(n=l,k=t,l-=v),g="#"+N(n)+N(k)+N(l));b[e]=g}}h.compiledHeatmaps=y}f.container=s(document.createElement("div"),h.container);f.count=f.container.appendChild(s(document.createElement("div"),h.count));f.legend=f.container.appendChild(s(document.createElement("div"),h.legend));f.graph=d.graph?f.container.appendChild(s(document.createElement("div"),h.graph)):0;w.length=0;for(var q in f)f[q]&&
+h[q].heatOn&&w.push({name:q,el:f[q]});u.length=0;if(f.graph){f.graph.style.width=d.history*h.column.width+(d.history-1)*h.column.spacing+"px";for(c=0;c<d.history;c++)u[c]=f.graph.appendChild(s(document.createElement("div"),h.column)),u[c].style.position="absolute",u[c].style.bottom=0,u[c].style.right=c*h.column.width+c*h.column.spacing+"px",u[c].style.width=h.column.width+"px",u[c].style.height="0px"}s(f.container,d);r();a.appendChild(f.container);f.graph&&(O=f.graph.clientHeight);d.toggleOn&&("click"===
+d.toggleOn&&(f.container.style.cursor="pointer"),S(f.container,d.toggleOn,G))}"object"===H(a)&&a.nodeType===j&&(e=a,a=document.body);a||(a=document.body);var b=this,d=I({},D.defaults,e||{}),f={},u=[],h,y,J=100,w=[],W=0,B=d.threshold,Q=0,L=A()-B,z,E=[],F=[],x,P,q="fps"===d.show,O,K,c,p;b.options=d;b.fps=0;b.duration=0;b.isPaused=0;b.tickStart=function(){Q=A()};b.tick=function(){z=A();W=z-L;B+=(W-B)/d.smoothing;b.fps=1E3/B;b.duration=Q<L?B:z-Q;L=z};b.pause=function(){x&&(b.isPaused=1,clearTimeout(x),
+C(x),C(P),x=P=0);return b};b.resume=function(){x||(b.isPaused=0,k());return b};b.set=function(a,c){d[a]=c;q="fps"===d.show;-1!==R(a,X)&&V();-1!==R(a,Y)&&s(f.container,d);return b};b.showDuration=function(){b.set("show","ms");return b};b.showFps=function(){b.set("show","fps");return b};b.toggle=function(){b.set("show",q?"ms":"fps");return b};b.hide=function(){b.pause();f.container.style.display="none";return b};b.show=function(){b.resume();f.container.style.display="block";return b};b.destroy=function(){b.pause();
+U();b.tick=b.tickStart=function(){}};V();k()}var A,r=m.performance;A=r&&(r.now||r.webkitNow)?r[r.now?"now":"webkitNow"].bind(r):function(){return+new Date};for(var C=m.cancelAnimationFrame||m.cancelRequestAnimationFrame,M=m.requestAnimationFrame,r=["moz","webkit","o"],G=0,k=0,Z=r.length;k<Z&&!C;++k)M=(C=m[r[k]+"CancelAnimationFrame"]||m[r[k]+"CancelRequestAnimationFrame"])&&m[r[k]+"RequestAnimationFrame"];C||(M=function(a){var e=A(),g=Math.max(0,16-(e-G));G=e+g;return m.setTimeout(function(){a(e+
+g)},g)},C=function(a){clearTimeout(a)});var T="string"===H(document.createElement("div").textContent)?"textContent":"innerText";D.extend=I;window.FPSMeter=D;D.defaults={interval:100,smoothing:10,show:"fps",toggleOn:"click",decimals:1,maxFps:60,threshold:100,position:"absolute",zIndex:10,left:"5px",top:"5px",right:"auto",bottom:"auto",margin:"0 0 0 0",theme:"dark",heat:0,graph:0,history:20};var X=["toggleOn","theme","heat","graph","history"],Y="position zIndex left top right bottom margin".split(" ")})(window);(function(m,j){j.theme={};var s=j.theme.base={heatmaps:[],container:{heatOn:null,heatmap:null,padding:"5px",minWidth:"95px",height:"30px",lineHeight:"30px",textAlign:"right",textShadow:"none"},count:{heatOn:null,heatmap:null,position:"absolute",top:0,right:0,padding:"5px 10px",height:"30px",fontSize:"24px",fontFamily:"Consolas, Andale Mono, monospace",zIndex:2},legend:{heatOn:null,heatmap:null,position:"absolute",top:0,left:0,padding:"5px 10px",height:"30px",fontSize:"12px",lineHeight:"32px",fontFamily:"sans-serif",
+textAlign:"left",zIndex:2},graph:{heatOn:null,heatmap:null,position:"relative",boxSizing:"padding-box",MozBoxSizing:"padding-box",height:"100%",zIndex:1},column:{width:4,spacing:1,heatOn:null,heatmap:null}};j.theme.dark=j.extend({},s,{heatmaps:[{saturation:0.8,lightness:0.8}],container:{background:"#222",color:"#fff",border:"1px solid #1a1a1a",textShadow:"1px 1px 0 #222"},count:{heatOn:"color"},column:{background:"#3f3f3f"}});j.theme.light=j.extend({},s,{heatmaps:[{saturation:0.5,lightness:0.5}],
+container:{color:"#666",background:"#fff",textShadow:"1px 1px 0 rgba(255,255,255,.5), -1px -1px 0 rgba(255,255,255,.5)",boxShadow:"0 0 0 1px rgba(0,0,0,.1)"},count:{heatOn:"color"},column:{background:"#eaeaea"}});j.theme.colorful=j.extend({},s,{heatmaps:[{saturation:0.5,lightness:0.6}],container:{heatOn:"backgroundColor",background:"#888",color:"#fff",textShadow:"1px 1px 0 rgba(0,0,0,.2)",boxShadow:"0 0 0 1px rgba(0,0,0,.1)"},column:{background:"#777",backgroundColor:"rgba(0,0,0,.2)"}});j.theme.transparent=
+j.extend({},s,{heatmaps:[{saturation:0.8,lightness:0.5}],container:{padding:0,color:"#fff",textShadow:"1px 1px 0 rgba(0,0,0,.5)"},count:{padding:"0 5px",height:"40px",lineHeight:"40px"},legend:{padding:"0 5px",height:"40px",lineHeight:"42px"},graph:{height:"40px"},column:{width:5,background:"#999",heatOn:"backgroundColor",opacity:0.5}})})(window,FPSMeter);
+
+
+var meter = new FPSMeter();
+
+*/
+
+
+// Update script
+var update = function (modifier) {
+  	hero.x=Math.floor(hero.x);
+  	hero.y=Math.floor(hero.y);
+  	hero.xprev = hero.x;
+    // checks to see if hero is inside a block probaby because a block was created ontop of them.
+  	if(levelCollision(hero.x,hero.y,hero.wide,hero.tall)==true){
+      for (var i = 0; i < 32; i++) {
+        if(levelCollision(hero.x,hero.y,hero.wide,hero.tall)==true){
+          hero.y-=i;
+          //hero.state=0; // cues frozen state
+          //setTimeout(function(){hero.state=2;}, 5000); //cues thawing state
+         //setTimeout(function(){hero.state=1;}, 6000); //cues normal state
+        }
+      }
+    }
+
+    
+
+
+    
+
+      
+	if (87 in keysDown && hero.state!=0) { // Player holding w
+      if(hero.jump==false && hero.falling==false){
+        hero.jump=true;
+        hero.ups=hero.y-96;
+        headRoom=0;
+        for (var i = 0; i < 16; i++) {
+        	if(levelCollision(hero.x,hero.y-i,hero.wide,hero.tall)!=true){
+              headRoom++;
+        	}
+      	}
+      }
+    }
+  	if(hero.jump==true){
+      if(levelCollision(hero.x,hero.y-16,hero.wide,hero.tall)!=true){
+      	hero.y -= headRoom;
+      }else{
+        hero.jump=false;
+      }
+     
+    }
+  	if(hero.y<hero.ups){hero.jump=false}
+  
+	if (83 in keysDown) { // Player holding s
+		//hero.y += hero.speed * modifier;
+		
+	}
+  
+
+    // MOVE LEFT
+	if (65 in keysDown && hero.state!=0) { // Player holding a
+		hero.left=true;
+      if(levelCollision(hero.x-8,hero.y,hero.wide,hero.tall)!=true){
+      	if (inside(hero.x,canvas.width/2-hero.cage/2,canvas.width/2+hero.cage)){
+          if(levelOffX<0){levelOffX += 8;}else{hero.x -= hero.speed * modifier;}
+        }else{
+          hero.x -= hero.speed * modifier;
+        }
+      }
+    hero.x=Math.floor(hero.x);
+  	hero.y=Math.floor(hero.y);
+	}
+  	// MOVE RIGHT
+	if (68 in keysDown && hero.state!=0) { // Player holding d
+		hero.left=false;
+      	if(levelCollision(hero.x+8,hero.y,hero.wide,hero.tall)!=true){
+      		if (inside(hero.x,canvas.width/2-hero.cage/2,canvas.width/2+hero.cage)){
+          		if(levelOffX>-((level[0].length*32)-canvas.width)){levelOffX -= 8;}else{hero.x += hero.speed * modifier;}
+        	}else{
+          		hero.x += hero.speed * modifier;
+        	}
+      	}
+     hero.x=Math.floor(hero.x);
+  	 hero.y=Math.floor(hero.y);
+	}
+    // this is because I come from gamemaker and pressing esc to end it feels right!
+  	if (27 in keysDown) { // Player holding esc
+		window.close('','_parent','');
+	}
+  	/// This handles y movement and collisions
+
+	// hero's gravity
+  	if(levelCollision(hero.x,gravity(hero.y,hero.mass * modifier),hero.wide,hero.tall)!=true){
+      	hero.falling=true;
+  		if(hero.jump==false){hero.y=Math.floor(gravity(hero.y,hero.mass * modifier))}
+    }else{
+      	hero.falling=false;
+      
+    }
+  
+  	// checks if hero falls 
+  	if(hero.y>700){location.reload();}
+    //nmes movement
+  	for (var i = 0; i < nmes.length; i++) {
+        nmes[i].x = Math.floor(nmes[i].x);
+        nmes[i].y = Math.floor(nmes[i].y);   
+      // checks if aliens are hitting player
+      if(point_distance(nmes[i].x+16,nmes[i].y+16,hero.x+16,hero.y+16)<32 && hero.state==1){
+      	hero.health-=5;
+        hero.state=-1;
+        levelShake=true;
+        setTimeout(function(){levelShake=false}, 500);
+        setTimeout(function(){hero.state=1}, 2000);
+      }
+      //checks if aliens have floated away or fell in a hole
+      if(nmes[i].y<-32 || nmes[i].y>672){
+        nmes[i].x = ship.startX+32;
+        nmes[i].y = ship.startY+32;
+        nmes[i].startX = ship.startX+32;
+        nmes[i].startY = ship.startY+32;
+        nmes[i].dx = 0;
+        nmes[i].mass = 128;
+      }
+      //checks if nmes are inside blocks probably because one was created near them
+      if(levelCollision(nmes[i].x,nmes[i].y,nmes[i].wide,nmes[i].tall)==true){
+        nmes[i].x = ship.startX+32;
+        nmes[i].y = ship.startY+32;
+        nmes[i].startX = ship.startX+32;
+        nmes[i].startY = ship.startY+32;
+        nmes[i].dx = 0;
+        nmes[i].mass = 128;
+      }  
+      nmes[i].hop=false;
+      // this moves the enemy right and left
+      if(levelCollision(nmes[i].x + Math.floor(((nmes[i].speed * modifier)) * nmes[i].dx),nmes[i].y,nmes[i].wide,nmes[i].tall)!=true){
+        // if the nme isnt up against something in the dir its going	
+        nmes[i].startX += Math.floor((nmes[i].speed * modifier) * nmes[i].dx);
+      }else{
+        
+        //This checks where the hero is at.
+      	// its going the right way it will try to jump over the obstacle
+        if (hero.x<nmes[i].x && nmes[i].dx==-1){nmes[i].hop=true} 
+        if (hero.x>nmes[i].x && nmes[i].dx==1){nmes[i].hop=true}
+        if(nmes[i].hop==true){
+           nmes[i].y-=32
+        }else
+          nmes[i].dx = nmes[i].dx * -1;//it turns around and goes the other way
+        }
+      	
+    }
+     
+
+      
+  	//nmes gravity
+    for (var i = 0; i < nmes.length; i++) {
+      	nmes[i].fall=true;
+      	if(levelCollision(nmes[i].x,Math.floor(gravity(nmes[i].y,nmes[i].mass * modifier)),nmes[i].wide,nmes[i].tall)==true){ // checks against level
+          nmes[i].fall=false;
+        }
+		
+      	if(nmes[i].fall==true){
+          //nmes[i].dir=0;
+          nmes[i].y=Math.floor(gravity(nmes[i].y,nmes[i].mass * modifier));          
+        }else{//this "HUNTS" the player
+          if((Math.floor(Math.random() * 11))<nmes[i].mean){heroHunt(nmes[i])}else{nmes[i].dx=0}
+        }
+    }
+   	//checks for shots[] nmes collision
+  for (var i = 0; i < clip; i++) {
+    for (var ii = 0; ii < nmes.length; ii++) {
+      if(point_distance(shots[i].x+2, shots[i].y+2, nmes[ii].x+16, nmes[ii].y+16)<16){
+          ++monstersCaught;
+          if(shots[i].type==1){  //freeze ray
+              // creates a box where the monster was.
+              t = new box();
+              t.x = Math.floor(nmes[ii].x - levelOffX);
+              t.y = Math.floor(nmes[ii].y);
+              t.startX = Math.floor(nmes[ii].x - levelOffX);
+              t.startY = Math.floor(nmes[ii].y);
+              t.breakable =true;
+              t.show = true;
+              t.hp = 5;
+              t.id = 1;
+              if(nmes[ii].left==true){
+                //left not floating               left floating
+              	if(nmes[ii].mass>0){t.type=10}else{t.type=11}
+              }
+              if(nmes[ii].left==false){
+                //right not floating               right floating
+              	if(nmes[ii].mass>0){t.type=0}else{t.type=1}
+              }
+              boxes.push(t);
+              nmes[ii].x = ship.startX+32;
+              nmes[ii].y = ship.startY+32;
+              nmes[ii].startX = ship.startX+32;
+              nmes[ii].startY = ship.startY+32;
+              nmes[ii].dx = 0;
+              nmes[ii].mass = 128;
+          }
+        if(shots[i].type==2){  //anti gravity gun
+          nmes[ii].mass = -nmes[ii].mass/2
+          shots[i].x = -10000;
+          shots[i].y = -100;
+          shots[i].dx = 0;
+          shots[i].dy = 0;
+        }
+      }
+    }
+    //checks for shots[] collision with ship
+    if(shots[i].x>ship.x-48 && shots[i].x<ship.x+48 && shots[i].y<ship.y+32 && shots[i].type==1){
+        shots[i].x = -10000;
+        shots[i].y = -100;
+        shots[i].dx = 0;
+        shots[i].dy = 0; 
+      	ship.hp -= 5;
+      	if(ship.hp<0){win=true}
+      }
+    // checks for shots[] collision with blocks
+    for (var ii = 0; ii < boxes.length; ii++) {
+      if(point_distance(shots[i].x+2, shots[i].y+2, boxes[ii].x+16, boxes[ii].y+16)<20){
+          shots[i].x = -10000;
+          shots[i].y = -100;
+          shots[i].dx = 0;
+          shots[i].dy = 0;
+          if(boxes[ii].breakable && shots[i].type==2){boxes[ii].hp--}
+        if(boxes[ii].breakable && shots[i].type==9){boxes[ii].hp==0}
+      }
+      if(boxes[ii].hp==0){
+ 		boxes.splice(ii,1);
+      }
+    }
+  }
+
+  	//Moves the shot objects
+  for (var i = 0; i < clip; i++) {
+    
+  	shots[i].x += shots[i].dx * modifier * shots[i].speed;
+  	shots[i].y += shots[i].dy * modifier * shots[i].speed;
+    //checks shot range
+   if (point_distance(shots[i].startx, shots[i].starty, shots[i].x, shots[i].y)>shots[i].range+shots[i].speed * modifier){shots[i].x = -100;}
+    
+   // stops shot from going offscreen
+   if(shots[i].x>canvas.width || shots[i].y>canvas.height || shots[i].x<0 || shots[i].y<0){
+    	shots[i].x = -10000;
+      	shots[i].y = -100;
+      	shots[i].dx = 0;
+      	shots[i].dy = 0;
+    }  
+  }
+  
+	//ship movement
+  	shipAi(modifier);
+  
+
+  
+  //handles level scrolling 
+      for (var i = 0; i < boxes.length; i++) {
+		boxes[i].x = Math.floor(boxes[i].startX + levelOffX);
+        boxes[i].y = Math.floor(boxes[i].y);
+    }
+      for (var i = 0; i < nmes.length; i++) {
+		nmes[i].x = nmes[i].startX + levelOffX;
+    }
+
+
+
+  ship.x = ship.startX + levelOffX;
+  canvas.style.backgroundPosition = (levelOffX*0.9)+"px 0px";
+  canvas2.style.backgroundPosition = (levelOffX*0.1)+"px 0px";
+  //canvas3.style.backgroundPosition = (levelOffX*0.2)+"px 0px";
+};
+
+
+
+
+// Draw script
+
+var render = function () {
+if(win==false){
+  	//DRAW BACKGROUND
+    //ctx.fillStyle = '#000000';
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+	// Shakes level when player hit
+	if(levelShake){
+      ctx.save();
+      tempShake=Math.random()*6-3;
+      ctx.translate(tempShake,tempShake);
+    }
+
+
+	if (monsterReady && monsterLReady  && AlienRightJumpReady && AlienLeftJumpReady && AlienFloatRightReady && AlienFloatLeftReady) {
+      for (var i = 0; i < nmes.length; i++) {
+        if(inside(nmes[i].x,-32,canvas.width+32)){
+          	if(nmes[i].mass>0){ // this means its not "floating"
+              if(nmes[i].left==false){ctx.drawImage(monsterImage, nmes[i].x, nmes[i].y);}
+              if(nmes[i].left==true){ctx.drawImage(monsterLImage, nmes[i].x, nmes[i].y);}
+              if(nmes[i].hop==true){//AlienRightJump
+                  if(nmes[i].left==false){ctx.drawImage(AlienRightJumpImage, nmes[i].x, nmes[i].y);}
+                  if(nmes[i].left==true){ctx.drawImage(AlienLeftJumpImage, nmes[i].x, nmes[i].y);}
+
+              }
+          	}else{
+              if(nmes[i].left==false){ctx.drawImage(AlienFloatRightImage, nmes[i].x, nmes[i].y);}
+              if(nmes[i].left==true){ctx.drawImage(AlienFloatLeftImage, nmes[i].x, nmes[i].y);}  
+            }
+        }
+      }
+	}
+	if (sightReady) {
+		ctx.drawImage(sightImage, targetX-8, targetY-8);
+	}
+         
+	// Score baby
+	ctx.fillStyle = "rgb(250, 250, 250)";
+	ctx.font = "24px Helvetica";
+	ctx.textAlign = "left";
+	ctx.textBaseline = "top";
+	ctx.fillText("hero.health: " + hero.health, 0, 32);
+    ctx.fillText("ship.health: " + ship.hp, 0, 64);
+  
+    //draws shot
+    for (var i = 0; i < clip; i++) {
+      if(inside(shots[i].x,-32,canvas.width+32)){
+    	if(shots[i].type==1){ctx.fillText("*", shots[i].x, shots[i].y)}
+        if(shots[i].type==2){ctx.fillText("#", shots[i].x, shots[i].y)}
+        if(shots[i].type==9){ctx.fillText("#", shots[i].x, shots[i].y)}
+      }
+    }
+
+	//draws level
+    for (var i = 0; i < boxes.length; i++) {
+    	if (IceBlockReady) {
+          	if(inside(boxes[i].x,-32,canvas.width+32) && inside(boxes[i].y,-32,canvas.height+32)){
+				if(boxes[i].id==1 && boxes[i].show==true){
+                  //left floating 
+                  if(boxes[i].type==0){ctx.drawImage(monsterImage, boxes[i].x, boxes[i].y);}
+              	  if(boxes[i].type==10){ctx.drawImage(monsterLImage, boxes[i].x, boxes[i].y);}
+                  if(boxes[i].type==1){ctx.drawImage(AlienFloatRightImage, boxes[i].x, boxes[i].y);}
+      			  if(boxes[i].type==11){ctx.drawImage(AlienFloatLeftImage, boxes[i].x, boxes[i].y);}
+  				  ctx.globalAlpha = 0.6;
+                  ctx.drawImage(IceBlockImage, boxes[i].x, boxes[i].y);
+                }
+				  ctx.globalAlpha = 1;
+
+              
+            }
+		}
+    }
+      	if (shipReady) {
+          	if(inside(ship.x,-32,canvas.width+32) && inside(ship.y,-32,canvas.height+32)){
+				ctx.drawImage(shipImage, ship.x, ship.y);
+            }
+		}
+  	if (heroIdleReady && heroLeftReady) { //shakeIt(size)
+      	if(hero.state==-1){ctx.globalAlpha = 0.5;}else{ctx.globalAlpha = 1;}
+		if(hero.left==false){ctx.drawImage(heroIdleImage, hero.x, hero.y)}
+        if(hero.left==true){ctx.drawImage(heroLeftImage, hero.x, hero.y)}
+    }
+
+	ctx.restore();
+}else{
+  	ctx.clearRect(0, 0, canvas.width, canvas.height);
+  	ctx.fillStyle = "rgb(0, 250, 0)";
+	ctx.font = "100px Helvetica";
+	ctx.textAlign = "left";
+	ctx.textBaseline = "center";
+	ctx.fillText("You Win ", 120, 120);
+  
+  
+}
+};
+
+
+
+
+
+
+
+
+// The main game loop
+var main = function () {
+	//meter.tickStart();
+	
+	var now = Date.now();
+	var delta = now - then;
+
+	update(delta / 1000);
+	render();
+
+	then = now;
+	
+	// Request to do this again ASAP
+	requestAnimationFrame(main); //here is me
+  //meter.tick();
+};
+
+// Cross-browser support for requestAnimationFrame
+var w = window;
+requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
+// Let's play this game!
+var then = Date.now();
+main();</script></body></html>
